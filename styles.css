@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar a, .login-btn {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar a:hover, .login-btn:hover {
+    color: #00ff99;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    background: linear-gradient(90deg, #00ff99, #00ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+p {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+/* Neon Button */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00ff99;
+    color: #111;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+.btn:hover {
+    background: #00cc77;
+    box-shadow: 0 0 20px #00ff99;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background: #222;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    margin: 10% auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px #00ff99;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.close:hover {
+    color: #00ff99;
+}
+
+/* Social Login Buttons */
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.google { background: #db4437; color: #fff; }
+.apple { background: #333; color: #fff; }
+.facebook { background: #1877f2; color: #fff; }
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: #00ff99;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-submit:hover {
+    background: #00cc77;
+}

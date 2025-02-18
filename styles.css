@@ -1,5 +1,7 @@
+/* #1 - Import Hacker Font */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+/* #2 - Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@ body {
     text-align: center;
 }
 
-/* Navbar */
+/* #3 - Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -40,7 +42,7 @@ body {
     color: #00ff00;
 }
 
-/* Hero Section */
+/* #4 - Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
@@ -50,6 +52,7 @@ body {
     padding: 20px;
 }
 
+/* #5 - Fix Title Animation */
 h1 {
     font-size: 4rem;
     background: linear-gradient(90deg, #00ff00, #33ff33);
@@ -61,16 +64,23 @@ h1 {
 }
 
 @keyframes fadeIn {
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-p {
-    font-size: 1.8rem;
-    margin: 20px 0;
-    max-width: 600px;
+/* #6 - Fix Button Glow Animation */
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #00ff00; }
+    50% { box-shadow: 0 0 20px #00ff00; }
+    100% { box-shadow: 0 0 10px #00ff00; }
 }
 
-/* Neon Green Button */
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -82,6 +92,7 @@ p {
     border-radius: 5px;
     transition: 0.3s;
     box-shadow: 0 0 10px #00ff00;
+    animation: glow 1.5s infinite alternate;
 }
 
 .btn:hover {
@@ -89,7 +100,7 @@ p {
     box-shadow: 0 0 20px #00ff00;
 }
 
-/* Footer */
+/* #7 - Footer */
 .footer {
     background: #000;
     padding: 20px;
@@ -98,7 +109,7 @@ p {
     margin-top: 50px;
 }
 
-/* Modal */
+/* #8 - Modal */
 .modal {
     display: none;
     position: fixed;
@@ -132,7 +143,7 @@ p {
     color: #00ff00;
 }
 
-/* Social Login Buttons */
+/* #9 - Social Login Buttons */
 .social-btn {
     width: 100%;
     padding: 10px;
@@ -152,7 +163,7 @@ p {
     opacity: 0.8;
 }
 
-/* Input Fields */
+/* #10 - Input Fields */
 input {
     width: 100%;
     padding: 10px;

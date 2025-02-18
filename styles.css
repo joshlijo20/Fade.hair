@@ -37,7 +37,7 @@ body {
 }
 
 .navbar a:hover, .login-btn:hover {
-    color: #00ff99;
+    color: #00ff00;
 }
 
 /* Hero Section */
@@ -52,7 +52,7 @@ body {
 
 h1 {
     font-size: 4rem;
-    background: linear-gradient(90deg, #00ff99, #00ccff);
+    background: linear-gradient(90deg, #00ff00, #33ff33);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
@@ -70,23 +70,23 @@ p {
     max-width: 600px;
 }
 
-/* Neon Button */
+/* Neon Green Button */
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background: #00ff99;
+    background: #00ff00;
     color: #111;
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: 0.3s;
-    box-shadow: 0 0 10px #00ff99;
+    box-shadow: 0 0 10px #00ff00;
 }
 
 .btn:hover {
-    background: #00cc77;
-    box-shadow: 0 0 20px #00ff99;
+    background: #00cc00;
+    box-shadow: 0 0 20px #00ff00;
 }
 
 /* Footer */
@@ -118,7 +118,7 @@ p {
     margin: 10% auto;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 15px #00ff99;
+    box-shadow: 0 0 15px #00ff00;
 }
 
 .close {
@@ -129,7 +129,7 @@ p {
 }
 
 .close:hover {
-    color: #00ff99;
+    color: #00ff00;
 }
 
 /* Social Login Buttons */
@@ -166,12 +166,12 @@ input {
     width: 100%;
     padding: 10px;
     font-size: 1.2rem;
-    background: #00ff99;
+    background: #00ff00;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .login-submit:hover {
-    background: #00cc77;
+    background: #00cc00;
 }
